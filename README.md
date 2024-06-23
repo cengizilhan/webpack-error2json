@@ -1,0 +1,2 @@
+# webpack-error-to-json
+ 
