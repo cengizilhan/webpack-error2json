@@ -13,7 +13,7 @@ class ErrorToJsonPlugin {
 
           // Replace spaces and new lines with a single space and remove leading and trailing spaces
           message = message.replace(/\s+/g, ' ').replace('"', '').trim();
-          details = details.replace(/\s+/g, ' '). replace('"', '').trim();
+          details = details.replace(/\s+/g, ' ').replace('"', '').trim();
 
           return {
             message,
@@ -22,7 +22,7 @@ class ErrorToJsonPlugin {
         });
 
         // Write errors to a JSON file
-        const errorsOutputPath = path.resolve(__dirname, 'webpack-errors.json');
+        const errorsOutputPath = path.resolve(process.cwd(), 'webpack-errors.json');
         fs.writeFileSync(errorsOutputPath, JSON.stringify(formattedErrors, null, 2));
       }
 
@@ -42,7 +42,7 @@ class ErrorToJsonPlugin {
         });
 
         // Write warnings to a JSON file
-        const warningsOutputPath = path.resolve(__dirname, 'webpack-warnings.json');
+        const warningsOutputPath = path.resolve(process.cwd(), 'webpack-warnings.json');
         fs.writeFileSync(warningsOutputPath, JSON.stringify(formattedWarnings, null, 2));
       }
     });
