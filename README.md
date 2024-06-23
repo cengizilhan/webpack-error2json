@@ -40,6 +40,27 @@ and and just build from webpack.
 
 npx webpack --config webpack.config.js
 
+### Generated Files
+The plugin generates the following files in the root directory:
+
+webpack-errors.json
+
+webpack-warnings.json
+
+### webpack-errors.json Example
+```
+[
+  {
+    "message": "Module not found: Error: Can't resolve '@/bower_components/jquery_legacy/dist/blabla' in 'C:\\Users\\cengiz.ilhan\\source\\repos\\Assets\\webpack-project\\Static\\src...'",
+    "details": "resolve '@/bower_components/jquery_legacy/dist/blabla' in 'C:\\Users\\cengiz.ilhan\\source\\repos\\..."
+  },
+  {
+    "message": "Module not found: Error: Can't resolve '@/bower_components/jquery_legacy/dist/blabla' in 'C:\\Users\\cengiz.ilhan\\source\\repos\\Assets\\webpack-project\\Static\\src...'",
+    "details": "resolve '@/bower_components/jquery_legacy/dist/blabla' in 'C:\\Users\\cengiz.ilhan\\source\\repos\\..."
+  }
+]
+```
+
 https://github.com/cengizilhan
 
 https://github.com/cengizilhan/webpack-error2json
