@@ -1,6 +1,6 @@
 {
   "name": "webpack-error2json",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Webpack plugin to export errors and warnings to JSON files.",
   "main": "ErrorToJsonPlugin.js",
   "keywords": ["front-end","javascript","webpack", "plugin", "errors", "json", "warnings"],
