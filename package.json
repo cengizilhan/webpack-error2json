@@ -1,5 +1,5 @@
 {
-  "name": "jsonerror",
+  "name": "webpack-error2json",
   "version": "1.0.0",
   "description": "A Webpack plugin to export errors and warnings to JSON files.",
   "main": "ErrorToJsonPlugin.js",
